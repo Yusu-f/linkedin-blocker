@@ -76,13 +76,3 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     });
   }
 });
-
-// chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-//   if (request.action === "nextpage") {
-//   console.log("received nextpage msg");
-//     chrome.scripting.executeScript({
-//       target: { tabId: sender.tab.id },
-//       files: ["blocker.js"],
-//     });
-//   }
-// });
