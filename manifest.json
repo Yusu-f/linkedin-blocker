@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "linkedin blocker extension",
+  "version": "0.0.1",
+  "description": "A Chrome extension for blocking multiple linkedin users automatically",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "tabs", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [],
+  "content_scripts": [],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automated LinkedIn Blocker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 40px;
+        width: 400px;
+      }
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      input {
+        width: calc(100% - 40px);
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: green;
+        color: white;
+        padding: 15px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Automated LinkedIn Blocker</h1>
+    <input
+      type="text"
+      id="pages-input"
+      placeholder="Number of pages to block (leave empty for all)"
+    />
+    <button id="blockBtn">Start Blocking</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
